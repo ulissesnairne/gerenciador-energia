@@ -1,0 +1,196 @@
+/* Estilos Gerais */
+body, html{
+    margin: 8px;
+    font-size: 12px;
+}
+
+h2.headerH2 {
+	height: 20px;
+	padding: 4px 0px 0px 7px;
+	margin: 0px 0px 0px 3px;
+	background-color: #666;
+	border-radius: 0.3em;
+	color: #FFF;
+	font: 12px Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Estilos específicos por ID */
+#divBanner{
+    position: relative;
+}
+
+#divBanner1 {
+    margin-left: 10px;
+    margin-top: -5px;
+    height: 55px;
+    background-repeat: no-repeat;
+}
+
+#divUser {
+    position: relative;
+    top: -30px;
+    float: right;
+    right: 15px;
+}
+
+#divMenu {
+    display: inline;
+}
+
+#divConteudo {
+    padding-bottom: 10px;
+    position: absolute;
+    top: 110px;
+    left: 17px;
+    width: 98%;
+}
+
+#divDadosMenu {
+    margin: 10px 5px 0px 0px;
+}
+
+/* Estilos específicos por Classe */
+.tituloDados {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #274b6d;
+	margin-left: 4px;
+}
+
+.tituloDadosMenor {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #274b6d;
+}
+
+.col1{
+    border: 0px solid gray;
+    vertical-align: super;
+    user-select: none;
+    width:450px
+}
+
+.col2{
+    border: 0px solid gray;
+    vertical-align: super;
+}
+
+.colDetails1{
+    width:300px ;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 5px;
+    border-bottom: 1px solid #B3B3B3;
+    border-right: 1px solid #B3B3B3;
+}
+
+.colDetails2{
+    padding-left: 5px;
+    border-bottom: 1px solid #B3B3B3;
+}
+
+.ellipsisText {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.scheduleEventClosed {
+    font-weight: bold;
+    border: 1px solid gray;
+    background-color: gray;
+    margin: 1px;
+}
+
+.scheduleEventToday {
+    color: black !important;
+    font-weight: bold;
+    border: 1px solid yellow;
+    background-color: yellow;
+    margin: 1px;
+}
+
+.scheduleEventAction {
+    font-weight: bold;
+    border: 1px solid orange;
+    background-color: orange;
+    margin: 1px;
+}
+
+.scheduleEventRadar {
+    font-weight: bold;
+    border: 1px solid darkviolet;
+    background-color: darkviolet;
+    margin: 1px;
+}
+
+.scheduleEventCritical {
+    font-weight: bold;
+    border: 1px solid red;
+    background-color: red;
+    margin: 1px;
+}
+
+.tdVerticalAlignSuper {
+    vertical-align: super;
+}
+
+.panelGridWidthFifty {
+    width: 50%;
+}
+
+/* Estilos customizados do primefaces */
+.ui-widget .ui-widget {
+    font-size: 10px;
+}
+
+.ui-menu.ui-menubar .ui-menu-parent .ui-menu-child {
+    padding-right: 10px;
+}
+
+.ui-menu .ui-menu-parent .ui-menu-child, .ui-tree {
+    width: auto;
+}
+
+.ui-menu .ui-menuitem-text {
+    white-space: nowrap;
+}
+
+.ui-menu .ui-menu-list .ui-menuitem {
+    padding-left: 5px;
+}
+
+.ui-tree, .ui-panel {
+    border: none;
+}
+
+.ui-widget-content a {
+    color: -webkit-link;
+}
+
+.ui-autocomplete-multiple, .ui-autocomplete-multiple-container, .ui-chips-container {
+    width: 100% !important;
+}
+
+.ui-autocomplete-panel {
+    width: auto !important;
+}
+
+.ui-autocomplete-input-token, .ui-autocomplete-input-token input,
+.ui-chips-input-token, .ui-chips-input-token input {
+    width: 100%;
+}
+
+.fc-time-grid table tr {
+    height: 26px;
+}
+
+.fc-event-container .fc-content .fc-time {
+    display: none;
+}
+
+.fa {
+    font-size: initial;
+}

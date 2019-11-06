@@ -1,0 +1,11 @@
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-api/src/main/java/br/com/ulisses/igti/gerenciador/service/watson/WatsonService.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-api/src/main/java/br/com/ulisses/igti/gerenciador/service/controle/ConfiguracaoService.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-api/src/main/java/br/com/ulisses/igti/gerenciador/service/menu/PageService.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-api/src/main/java/br/com/ulisses/igti/gerenciador/entity/controle/Configuracao.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-api/src/main/java/br/com/ulisses/igti/gerenciador/service/menu/MenuItemService.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-api/src/main/java/br/com/ulisses/igti/gerenciador/entity/menu/Page.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-api/src/main/java/br/com/ulisses/igti/gerenciador/entity/cadastro/TipoDispositivo.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-api/src/main/java/br/com/ulisses/igti/gerenciador/entity/permission/Permission.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-api/src/main/java/br/com/ulisses/igti/gerenciador/service/cadastro/TipoDispositivoService.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-api/src/main/java/br/com/ulisses/igti/gerenciador/service/menu/MenuService.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-api/src/main/java/br/com/ulisses/igti/gerenciador/entity/menu/MenuItem.java

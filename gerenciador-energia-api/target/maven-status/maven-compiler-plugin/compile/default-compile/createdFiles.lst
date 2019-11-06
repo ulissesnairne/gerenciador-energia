@@ -1,0 +1,11 @@
+br/com/ulisses/igti/gerenciador/service/watson/WatsonService.class
+br/com/ulisses/igti/gerenciador/entity/permission/Permission.class
+br/com/ulisses/igti/gerenciador/entity/controle/Configuracao.class
+br/com/ulisses/igti/gerenciador/entity/menu/Page.class
+br/com/ulisses/igti/gerenciador/service/menu/PageService.class
+br/com/ulisses/igti/gerenciador/entity/cadastro/TipoDispositivo.class
+br/com/ulisses/igti/gerenciador/service/menu/MenuItemService.class
+br/com/ulisses/igti/gerenciador/service/controle/ConfiguracaoService.class
+br/com/ulisses/igti/gerenciador/service/menu/MenuService.class
+br/com/ulisses/igti/gerenciador/entity/menu/MenuItem.class
+br/com/ulisses/igti/gerenciador/service/cadastro/TipoDispositivoService.class

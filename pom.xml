@@ -1,0 +1,138 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.ulisses.igti</groupId>
+	<artifactId>gerenciador-energia</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<!-- Dependencies -->
+		<javax.mail.version>1.6.2</javax.mail.version>
+		<org.joinfaces.version>4.0.5</org.joinfaces.version>
+		<org.primefaces.themes.version>1.0.10</org.primefaces.themes.version>
+		<com.mchange.c3p0.version>0.9.5.3</com.mchange.c3p0.version>
+		<com.hynnet.ojdbc.version>12.1.0.2</com.hynnet.ojdbc.version>
+		<mysql.connector.version>8.0.14</mysql.connector.version>
+		<org.apache.poi.version>4.1.0</org.apache.poi.version>
+		<watson>7.3.0</watson>
+		<flac.encoder>0.3.6</flac.encoder>
+		<jackson-annotations>2.9.9</jackson-annotations>
+		<google.gson>2.8.5</google.gson>
+
+		<!-- Maven dependencies -->
+		<maven.compiler.version>3.8.1</maven.compiler.version>
+		<maven.compiler.source.version>1.8</maven.compiler.source.version>
+		<maven.compiler.target.version>1.8</maven.compiler.target.version>
+		<maven.compiler.encoding>ISO-8859-1</maven.compiler.encoding>
+		<maven.site.version>3.7.1</maven.site.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- Mail -->
+			<dependency>
+				<groupId>com.sun.mail</groupId>
+				<artifactId>javax.mail</artifactId>
+				<version>${javax.mail.version}</version>
+			</dependency>
+
+			<!-- JSF -->
+			<dependency>
+				<groupId>org.joinfaces</groupId>
+				<artifactId>joinfaces-dependencies</artifactId>
+				<version>${org.joinfaces.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.primefaces.themes</groupId>
+				<artifactId>all-themes</artifactId>
+				<version>${org.primefaces.themes.version}</version>
+			</dependency>
+
+			<!-- Database -->
+			<dependency>
+				<groupId>com.mchange</groupId>
+				<artifactId>c3p0</artifactId>
+				<version>${com.mchange.c3p0.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql.connector.version}</version>
+			</dependency>
+
+			<!-- Word/Excel -->
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi</artifactId>
+				<version>${org.apache.poi.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-ooxml</artifactId>
+				<version>${org.apache.poi.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.ibm.watson</groupId>
+				<artifactId>ibm-watson</artifactId>
+				<version>${watson}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>net.sourceforge.javaflacencoder</groupId>
+				<artifactId>java-flac-encoder</artifactId>
+				<version>${flac.encoder}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-annotations</artifactId>
+				<version>${jackson-annotations}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>${google.gson}</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven.compiler.version}</version>
+
+					<configuration>
+						<source>${maven.compiler.source.version}</source>
+						<target>${maven.compiler.target.version}</target>
+						<encoding>${maven.compiler.encoding}</encoding>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>${maven.site.version}</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<modules>
+		<module>gerenciador-energia-web</module>
+		<module>gerenciador-energia-core</module>
+		<module>gerenciador-energia-api</module>
+	</modules>
+</project>

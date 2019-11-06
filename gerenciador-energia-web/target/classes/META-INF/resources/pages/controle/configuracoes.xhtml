@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" xmlns="http://www.w3.org/1999/xhtml"
+	template="/pages/templates/commonLayout.xhtml">
+	
+	<ui:define name="body">
+		<h:form id="form">
+			<p:growl id="msgs" showDetail="true"/>
+			
+			<p:fieldset legend="Watson" style="margin-bottom:20px">
+		        <h:panelGrid columns="2" cellpadding="5">
+		               <h3>Assistant Api Key</h3>
+				       <p:inputText id="assistantApiKey" value="#{configuracoesBean.configuracao.watsonAssistantApiKey}" size="150" />
+				       
+				       <h3>Assistant Id</h3>
+				       <p:inputText id="assistantId" value="#{configuracoesBean.configuracao.watsonAssistantId}" size="150" />
+		
+					   <h3>Speech Api Key</h3>
+				       <p:inputText id="speechApiKey" value="#{configuracoesBean.configuracao.watsonSpeechApiKey}" size="150" />
+				       
+				       <h3>Text Api Key</h3>
+				       <p:inputText id="textApiKey" value="#{configuracoesBean.configuracao.watsonTextApiKey}" size="150" />
+		        </h:panelGrid>
+	    	</p:fieldset>
+	    	
+	    	<p:fieldset legend="Outras Configurações" style="margin-bottom:20px">
+		        <h:panelGrid columns="2" cellpadding="5">
+		               <h3>Valor do KWH</h3>
+				       <p:inputNumber id="valorKWH" value="#{configuracoesBean.configuracao.valorKWH}"  decimalPlaces="2" />  
+		        </h:panelGrid>
+	    	</p:fieldset>
+	    	
+	    	<p:commandButton value="Salvar" styleClass="ui-priority-primary" action="#{configuracoesBean.save}" ajax="false"  process="@this msgs" />		
+    	</h:form>	
+	</ui:define>
+
+</ui:composition>

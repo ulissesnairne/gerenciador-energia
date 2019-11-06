@@ -1,0 +1,16 @@
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/service/controle/ConfiguracoesServiceBean.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/menu/dao/MenuDao.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/service/menu/MenuServiceBean.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/menu/dao/MenuResultSetExtractor.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/cadastro/dao/TipoDispositivoResultSetExtractor.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/util/Audio.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/qualifier/GerenciadorDataSource.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/controle/dao/ConfiguracoesResulSetExtractor.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/service/watson/TextSpeechService.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/GerenciadorCoreConfiguration.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/service/watson/AssistantService.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/controle/dao/ConfiguracoesDao.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/cadastro/dao/TipoDispositivoDao.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/service/cadastro/TipoDispositivoServiceBean.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/service/watson/SpeechTextServices.java
+/Users/ulissesnairnedealmeida/sources/ulisses/eclipse-jee/projeto-aplicado/gerenciador-energia/gerenciador-energia-core/src/main/java/br/com/ulisses/igti/gerenciador/service/watson/WatsonServiceBean.java
