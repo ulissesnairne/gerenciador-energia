@@ -15,8 +15,8 @@ COPY ./src/main/resources/properties/log4j.properties /oracle/gerenciador-energi
 COPY ./src/main/resources/properties/log-gerenciador-energia.properties /oracle/gerenciador-energia/
 
 # The application's jar file
-COPY ./target/gerenciador-energia.jar /usr/src/gerenciador-energia/
-WORKDIR /usr/src/gerenciador-energia/
+COPY ./target/gerenciador-energia-web.jar /Users/ulissesnairnedealmeida/sources/docker-files/gerenciador-energia/
+WORKDIR /Users/ulissesnairnedealmeida/sources/docker-files/gerenciador-energia/
 
 # Run the jar file
-CMD ["java", "-jar", "gerenciador-energia.jar"]
+CMD ["java", "-jar", "gerenciador-energia-web.jar"]

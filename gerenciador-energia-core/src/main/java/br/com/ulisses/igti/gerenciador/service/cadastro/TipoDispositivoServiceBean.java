@@ -36,7 +36,7 @@ public class TipoDispositivoServiceBean implements TipoDispositivoService {
 
 	@Override
 	public void update(TipoDispositivo tipo) {
-		this.update(tipo);
+		this.tipoDispositivoDao.update(tipo);
 	}
 
 }

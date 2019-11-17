@@ -26,6 +26,9 @@ public class ConfiguracoesBean {
 	@PostConstruct
 	public void init() {
 		this.configuracao = this.configuracaoService.find();
+		if (this.configuracao == null) {
+			this.configuracao = new Configuracao();
+		}
 	}
 
 	public void save() {

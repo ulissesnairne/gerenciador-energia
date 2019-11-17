@@ -24,11 +24,13 @@
 			<h:form id="form">
 				<p:growl id="msgs" showDetail="true"/>
 				
-				<p:dataTable id="tbl" var="tipo" editable="true" widgetVar="cellTipoDispositivo"
+				<p:dataTable id="tbl" var="tipo"
 					value="#{tipoDispositivoBean.listaTipoDispositivo}"
 					paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {Exporters}"
 					rowKey="#{tipo.codigo}" selection="#{tipoDispositivoBean.tipoDispositivoSelecionado}" selectionMode="single"
 					paginator="true" rows="10" style="margin-bottom:20px">
+					
+					<p:ajax event="rowSelect" listener="#{tipoDispositivoBean.onRowSelect}" />
 					
 					<f:facet name="{Exporters}">
 						<div style="float: right;">
@@ -54,9 +56,6 @@
 						</div>
 					</f:facet>
 					
-					<p:ajax event="rowEdit" listener="#{tipoDispositivoBean.onRowEdit}" update=":form:msgs" />
-			        <p:ajax event="rowEditCancel" listener="#{tipoDispositivoBean.onRowCancel}" update=":form:msgs" />
-			 
 			        <p:column headerText="Código">
 			            <p:cellEditor>
 			                <f:facet name="output"><h:outputText value="#{tipo.codigo}" /></f:facet>
@@ -70,13 +69,15 @@
 		                   	<f:facet name="input"><p:inputText var="descricao" value="#{tipo.descricao}" style="width:90%"/></f:facet>
 		               	 </p:cellEditor>
 			        </p:column>
+			        
+			        
 
 				</p:dataTable>
 				
 				<p:contextMenu for="tbl">
-			        <p:menuitem value="View" update="tipoDispositivoVisualizacaoDialog tbl msgs" icon="pi pi-search" oncomplete="PF('tipoDispositivoVisualizacaoDialog').show()"/>
-			        <p:menuitem value="Edit" update="tipoDispositivoAlterarDialog tbl msgs" icon="pi pi-pencil" oncomplete="PF('tipoDispositivoAlterarDialog').show()"/>
-			        <p:menuitem value="Delete" update="tbl msgs" icon="pi pi-times" action="#{tipoDispositivoBean.onDeleteRow}"/>
+			        <p:menuitem value="visualizar" update="tipoDispositivoVisualizacaoDialog tbl msgs" icon="pi pi-search" oncomplete="PF('tipoDispositivoVisualizacaoDialog').show()"/>
+			        <p:menuitem value="Editar" update="tipoDispositivoAlterarDialog tbl msgs" icon="pi pi-pencil" oncomplete="PF('tipoDispositivoAlterarDialog').show()"/>
+			        <p:menuitem value="Deletar" update="tbl msgs" icon="pi pi-times" action="#{tipoDispositivoBean.onDeleteRow}"/>
 			    </p:contextMenu>
 			    
 			    <div class="ui-g">
@@ -105,7 +106,7 @@
 			            <p:panelGrid columns="1" styleClass="ui-noborder" columnClasses="column1Class, column2Class">
 			            	<p:row>
 			            		<p:column style="font-weight: bold;">Descricao:</p:column>
-        						<p:column style="font-weight: bold;"><p:inputText value="#{tipoDispositivoBean.descricaoInclusao}" /></p:column>
+        						<p:column style="font-weight: bold;"><p:inputText value="#{tipoDispositivoBean.tipoDispositivoSelecionado.descricao}" /></p:column>
         					</p:row>
         					
         					<p:row>
@@ -127,7 +128,7 @@
 			            	<p:row>
 			            		<p:column value="Código:"><h:outputText value="#{tipoDispositivoBean.tipoDispositivoSelecionado.codigo}" /> </p:column>
 			            		<p:column style="font-weight: bold;">Descricao:</p:column>
-        						<p:column style="font-weight: bold;"><p:inputText value="#{tipoDispositivoBean.descricaoInclusao}" /></p:column>
+        						<p:column style="font-weight: bold;"><p:inputText value="#{tipoDispositivoBean.tipoDispositivoSelecionado.descricao}" /></p:column>
         					</p:row>
         					
         					<p:row>

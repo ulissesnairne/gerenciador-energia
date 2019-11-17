@@ -1,9 +1,17 @@
 package br.com.ulisses.igti.gerenciador.entity.cadastro;
 
-public class TipoDispositivo {
+import java.io.Serializable;
+
+public class TipoDispositivo implements Serializable {
+
+	private static final long serialVersionUID = -7495207496036823638L;
 
 	private Integer codigo;
 	private String descricao;
+
+	public TipoDispositivo() {
+
+	}
 
 	public Integer getCodigo() {
 		return codigo;

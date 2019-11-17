@@ -56,7 +56,7 @@ public class TipoDispositivoDao {
 		String sql = "UPDATE TIPO_DISPOSITIVO SET TDI_DESCRICAO = :descricao WHERE TDI_COD = :codigo";
 
 		MapSqlParameterSource parameter = new MapSqlParameterSource();
-		parameter.addValue("codigo", tipo.getDescricao());
+		parameter.addValue("codigo", tipo.getCodigo());
 		parameter.addValue("descricao", tipo.getDescricao());
 
 		jdbcTemplate.update(sql, parameter);

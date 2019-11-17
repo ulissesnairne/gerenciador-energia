@@ -134,5 +134,6 @@
 		<module>gerenciador-energia-web</module>
 		<module>gerenciador-energia-core</module>
 		<module>gerenciador-energia-api</module>
+		<module>gerenciador-energia-scripts</module>
 	</modules>
 </project>

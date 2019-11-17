@@ -1,28 +1,32 @@
 package br.com.ulisses.igti.gerenciador.cadastro;
 
+import java.io.Serializable;
 import java.util.List;
 
+import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
+import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 
+import org.primefaces.event.SelectEvent;
 import org.springframework.stereotype.Controller;
 
 import br.com.ulisses.igti.gerenciador.entity.cadastro.TipoDispositivo;
 import br.com.ulisses.igti.gerenciador.service.cadastro.TipoDispositivoService;
 
 @Controller
-@SessionScoped
-public class TipoDispositivoBean {
+@ViewScoped
+public class TipoDispositivoBean implements Serializable {
+
+	private static final long serialVersionUID = -7144194779576955995L;
 
 	private List<TipoDispositivo> listaTipoDispositivo;
 
 	private TipoDispositivoService tipoDispositivoService;
 
 	private TipoDispositivo tipoDispositivoSelecionado;
-
-	private String descricaoInclusao;
 
 	@Inject
 	public TipoDispositivoBean(TipoDispositivoService tipoDispositivoService) {
@@ -42,17 +46,15 @@ public class TipoDispositivoBean {
 		this.tipoDispositivoSelecionado = tipoDispositivoSelecionado;
 	}
 
-	public String getDescricaoInclusao() {
-		return descricaoInclusao;
-	}
-
-	public void setDescricaoInclusao(String descricaoInclusao) {
-		this.descricaoInclusao = descricaoInclusao;
+	public void onRowSelect(SelectEvent event) {
+		if (event.getObject() != null) {
+			this.setTipoDispositivoSelecionado((TipoDispositivo) event.getObject());
+			System.out.println(tipoDispositivoSelecionado.getDescricao());
+		}
 	}
 
 	public void onEditRow() {
 		if (tipoDispositivoSelecionado != null) {
-			tipoDispositivoSelecionado.setDescricao(this.descricaoInclusao);
 			tipoDispositivoService.update(tipoDispositivoSelecionado);
 
 			FacesMessage msg = new FacesMessage(
@@ -72,6 +74,7 @@ public class TipoDispositivoBean {
 			FacesMessage msg = new FacesMessage(
 					"Foi exceluído o tipo de dispositivo " + tipoDispositivoSelecionado.getDescricao());
 			FacesContext.getCurrentInstance().addMessage(null, msg);
+			this.tipoDispositivoSelecionado = null;
 		} else {
 			FacesMessage msg = new FacesMessage("Não foi selecionado nenhum tipo de dispositivo para exclusão. ");
 			FacesContext.getCurrentInstance().addMessage(null, msg);
@@ -79,16 +82,17 @@ public class TipoDispositivoBean {
 
 	}
 
+	@PostConstruct
+	public void init() {
+//		this.tipoDispositivoSelecionado = new TipoDispositivo();
+	}
+
 	public void onAddNew() {
-		TipoDispositivo tipo = new TipoDispositivo();
-		tipo.setDescricao(this.descricaoInclusao);
+		tipoDispositivoService.save(tipoDispositivoSelecionado);
 
-		tipo = tipoDispositivoService.save(tipo);
-
-		FacesMessage msg = new FacesMessage("Adicionado novo tipo ", tipo.getDescricao());
+		FacesMessage msg = new FacesMessage("Adicionado novo tipo ", tipoDispositivoSelecionado.getDescricao());
 		FacesContext.getCurrentInstance().addMessage(null, msg);
 
-		this.descricaoInclusao = "";
 	}
 
 }
