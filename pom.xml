@@ -19,7 +19,7 @@
 		<watson>7.3.0</watson>
 		<flac.encoder>0.3.6</flac.encoder>
 		<jackson-annotations>2.9.9</jackson-annotations>
-		<google.gson>2.8.5</google.gson>
+		<google.gson>2.8.9</google.gson>
 
 		<!-- Maven dependencies -->
 		<maven.compiler.version>3.8.1</maven.compiler.version>
