@@ -15,7 +15,7 @@
 		<com.mchange.c3p0.version>0.9.5.3</com.mchange.c3p0.version>
 		<com.hynnet.ojdbc.version>12.1.0.2</com.hynnet.ojdbc.version>
 		<mysql.connector.version>8.0.14</mysql.connector.version>
-		<org.apache.poi.version>4.1.0</org.apache.poi.version>
+		<org.apache.poi.version>4.1.1</org.apache.poi.version>
 		<watson>7.3.0</watson>
 		<flac.encoder>0.3.6</flac.encoder>
 		<jackson-annotations>2.9.9</jackson-annotations>
