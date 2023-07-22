@@ -12,7 +12,7 @@
 		<javax.mail.version>1.6.2</javax.mail.version>
 		<org.joinfaces.version>4.0.5</org.joinfaces.version>
 		<org.primefaces.themes.version>1.0.10</org.primefaces.themes.version>
-		<com.mchange.c3p0.version>0.9.5.3</com.mchange.c3p0.version>
+		<com.mchange.c3p0.version>0.9.5.4</com.mchange.c3p0.version>
 		<com.hynnet.ojdbc.version>12.1.0.2</com.hynnet.ojdbc.version>
 		<mysql.connector.version>8.0.14</mysql.connector.version>
 		<org.apache.poi.version>4.1.0</org.apache.poi.version>
